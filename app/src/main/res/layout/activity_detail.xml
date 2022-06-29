@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailActivity">
+
+    <ImageView
+        android:layout_width="1026dp"
+        android:layout_height="1200dp"
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/gmbr"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tv_heading"
+        app:layout_constraintVertical_bias="0.0"
+        tools:layout_editor_absoluteX="-16dp" />
+
+    <TextView
+        android:id="@+id/tv_heading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="DATA PENDAFTARAN WEBINAR"
+        android:textSize="24dp"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/tv_nim"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/tv_heading"
+        android:text="NIM"
+        android:layout_margin="36sp"
+        android:gravity="center"
+        android:textColor="#FFFFFF"
+        />
+
+
+    <TextView
+        android:id="@+id/tv_nama"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/tv_nim"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:text="Nama"
+        android:layout_margin="15sp"
+        android:gravity="center"
+        android:textColor="#FFFFFF"
+        />
+
+    <TextView
+        android:id="@+id/tv_kelamin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/tv_nama"
+
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:text="Jenis Kelamin"
+        android:layout_margin="15sp"
+        android:gravity="center"
+        android:textColor="#FFFFFF"
+        />
+
+    <TextView
+        android:id="@+id/tv_Prodi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/tv_kelamin"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:text="Prodi"
+        android:layout_margin="15sp"
+        android:gravity="center"
+        android:textColor="#FFFFFF"
+        />
+
+    <TextView
+        android:id="@+id/tv_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/tv_Prodi"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:text="Info"
+        android:layout_margin="15sp"
+        android:gravity="center"
+        android:textColor="#FFFFFF"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
